@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Only add this function contents
 void sortIncDec(int arr[],int n){
+	// START //
 	int array_div = n / 2;
 	int a, b;
 	int even_array_length, odd_array_length;
@@ -24,7 +26,6 @@ void sortIncDec(int arr[],int n){
 			odd_count++;
 		}
 	}
-	printf("\nIncreasing order Even indexes : ");
 	for(int i=0;i<even_array_length;++i){
 		for(int j=i+1;j<even_array_length;++j){
 			if(even[i] > even[j]){
@@ -36,10 +37,9 @@ void sortIncDec(int arr[],int n){
 	}
 
 	for(int i=0;i<even_array_length;i++){
-		printf("%d",even[i]);
+		printf("%d ",even[i]);
 	}
 
-	printf("\nDecreasing order odd indexes : ");
 	for(int i=0;i<odd_array_length;++i){
 		for(int j=i+1;j<odd_array_length;++j){
 			if(odd[i] < odd[j]){
@@ -49,10 +49,10 @@ void sortIncDec(int arr[],int n){
 			}
 		}
 	}
-
 	for(int i=0;i<odd_array_length;i++){
-		printf("%d",odd[i]);
+		printf("%d ",odd[i]);
 	}
+	// END //
 }
 
 int main(){
